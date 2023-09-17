@@ -59,19 +59,21 @@ img {
 
 /* header */
 .header {
-    border-bottom: 1px solid var(--CORNFLOWER, #E7E9FC);
+    border-bottom: 1px solid #E7E9FC;
 }
 
 .header .container {
-    padding-top: 24px;
-    padding-bottom: 24px;
     display: flex;
+    width: 1158px;
     gap: 332px;
-
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .header-nav {
     display: flex;
+    align-items: center;
 }
 
 .header-logo {
@@ -83,6 +85,7 @@ img {
     letter-spacing: 0.54px;
     text-transform: uppercase;
     text-decoration: none;
+    margin-right: 76px;
 }
 
 .header-logo-studio {
@@ -90,10 +93,10 @@ img {
 }
 
 .header-menu-list {
-    display: inline-flex;
-    align-items: flex-start;
+    display: flex;
+    padding-top: 24px;
+    padding-bottom: 24px;
     gap: 40px;
-    margin-left: 76px;
     margin-right: 0;
 
 }
@@ -119,6 +122,8 @@ img {
 
 .header-addres {
     font-style: normal;
+    display: flex;
+    align-items: center;
 }
 
 .header-addres-list {
@@ -145,10 +150,11 @@ img {
 /* Section-dark */
 .section-dark {
     background-color: #2E2F42;
-
 }
 
-.section-dark .container {}
+.section-dark {
+    padding: 188px 0;
+}
 
 .section-dark-title {
     color: #FFF;
@@ -157,13 +163,9 @@ img {
     font-weight: 700;
     line-height: 1.07;
     letter-spacing: 1.12px;
-    width: 496px;
+    max-width: 496px;
     margin-right: auto;
     margin-left: auto;
-
-
-
-
 }
 
 .button-order {
@@ -175,14 +177,18 @@ img {
     letter-spacing: 0.64px;
     background: #4D5AE5;
     cursor: pointer;
-    display: inline-flex;
+    display: block;
+    min-width: 169px;
+    height: 56px;
     padding: 16px 32px;
+    border: none;
     align-items: center;
     gap: 10px;
     margin-top: 48px;
+    margin-right: auto;
+    margin-left: auto;
     border-radius: 4px;
     box-shadow: 0px 4px 4px 0px #00000026;
-
 }
 
 .button-order:hover,
@@ -220,6 +226,7 @@ img {
     line-height: 1.2;
     letter-spacing: 0.4px;
     text-align: left;
+    margin-bottom: 8px;
 }
 
 .advantages-text {
@@ -243,6 +250,7 @@ img {
     line-height: 1.11;
     letter-spacing: 0.72px;
     text-transform: capitalize;
+    margin-bottom: 72px;
 }
 
 .team-list {
@@ -255,12 +263,14 @@ img {
 .team-item {
     background-color: #FFFFFF;
     display: inline-flex;
+    width: calc((100% - 72px) / 4);
     padding-bottom: 0px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 32px;
-    margin-top: 72px;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .team-list-text {
@@ -270,8 +280,8 @@ img {
     justify-content: center;
     align-items: center;
     gap: 8px;
-    margin-bottom: 32px;
-
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .team-subtitle {
@@ -281,6 +291,7 @@ img {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.4px;
+    margin-bottom: 8px;
 }
 
 .team-text {
@@ -300,24 +311,26 @@ img {
     line-height: 1.11;
     letter-spacing: 0.72px;
     text-transform: capitalize;
+    margin-bottom: 72px;
 }
 
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
-
+    column-gap: 24px;
+    row-gap: 48px;
 }
 
 .portfolio-list-text {
     display: flex;
-    padding: 0px 16px;
+    padding: 32px 16px;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     gap: 8px;
     align-self: stretch;
     margin-bottom: 32px;
+    border: 1px solid #E7E9FC;
 }
 
 .portfolio-subtitle {
@@ -326,20 +339,18 @@ img {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.4px;
+    margin-bottom: 8px
 }
 
 .portfolio-item {
-    flex-basis: calc((100%-48px) /3);
+    width: calc((100%-48px) /3);
     display: flex;
     width: 360px;
     height: 420px;
     padding-bottom: 0px;
     flex-direction: column;
     align-items: flex-start;
-    gap: 32px;
     flex-shrink: 0;
-    border: 1px solid #E7E9FC;
-    margin-top: 72px;
 }
 
 .portfolio-text {
@@ -352,13 +363,11 @@ img {
 /* footer */
 .footer {
     background: #2E2F42;
-}
-
-.footer .container {
     padding-top: 100px;
     padding-bottom: 100px;
-
 }
+
+.footer .container {}
 
 .footer-logo {
     color: #4D5AE5;
@@ -370,11 +379,11 @@ img {
     letter-spacing: 0.54px;
     text-transform: uppercase;
     text-decoration: none;
-    display: inline-flex;
+    display: inline-block;
     height: 24px;
     align-items: center;
     flex-shrink: 0;
-
+    margin-bottom: 16px;
 }
 
 .footer-logo-studio {
@@ -387,6 +396,5 @@ img {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.32px;
-    margin-top: 16px;
     width: 264px;
 }
