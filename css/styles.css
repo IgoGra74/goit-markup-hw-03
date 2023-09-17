@@ -94,8 +94,6 @@ img {
 
 .header-menu-list {
     display: flex;
-    padding-top: 24px;
-    padding-bottom: 24px;
     gap: 40px;
     margin-right: 0;
 
@@ -103,6 +101,8 @@ img {
 
 .header-menu-item {
     flex-basis: calc((100% - 80px) / 3);
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .header-menu-link {
@@ -257,7 +257,6 @@ img {
     display: flex;
     gap: 24px;
     justify-content: center;
-
 }
 
 .team-item {
@@ -331,6 +330,7 @@ img {
     align-self: stretch;
     margin-bottom: 32px;
     border: 1px solid #E7E9FC;
+    border-top: none;
 }
 
 .portfolio-subtitle {
