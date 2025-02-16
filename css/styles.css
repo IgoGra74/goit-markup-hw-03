@@ -71,6 +71,7 @@ img {
 .header .container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .header-navigation {
@@ -124,7 +125,7 @@ img {
 .header-contacts {
     font-style: normal;
     display: flex;
-    align-items: center;
+
 }
 
 .header-contacts-list {
